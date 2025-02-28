@@ -18,8 +18,8 @@ app.use(express.urlencoded({
     limit: '16kb'
 }));
 
-app.use(expree.static('public'));
+app.use(express.static('public'));
 
-app.use(cookieParser());
+app.use(cookieParser())
 
-export { app };
+export default app;
